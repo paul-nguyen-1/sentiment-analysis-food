@@ -117,6 +117,13 @@ class RecipeRetrievalPipeline:
             "Final evaluation with labeled qrels",
             ['python', 'search_recipe.py']
         )
+        
+    def step7_sentiment_analysis(self):
+        self.print_header("STEP 7: Sentiment Analysis")
+        return self.run_command(
+            "Running sentiment analysis",
+            ['python', 'sentiment.py']
+        )
     
     def run_full_pipeline(self):
         steps = [
@@ -126,6 +133,7 @@ class RecipeRetrievalPipeline:
             self.step4_search,
             self.step5_label_qrels,
             self.step6_final_eval,
+            self.step7_sentiment_analysis,
         ]
         
         for i, step in enumerate(steps, 1):
@@ -160,7 +168,7 @@ def main():
     parser = argparse.ArgumentParser(description='Recipe Retrieval System Pipeline')
     
     parser.add_argument('--full', action='store_true', help='Run full pipeline')
-    parser.add_argument('--step', type=int, choices=[1, 2, 3, 4, 5, 6], help='Run specific step')
+    parser.add_argument('--step', type=int, choices=[1, 2, 3, 4, 5, 6, 7], help='Run specific step')
     
     args = parser.parse_args()
     
