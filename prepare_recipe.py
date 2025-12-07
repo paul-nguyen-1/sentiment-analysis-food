@@ -87,6 +87,7 @@ def main():
         return
     
     create_corpus(RECIPES_CSV, corpus_dir)
+    create_sample_queries(queries_file)
     df = pd.read_csv(RECIPES_CSV)
     create_placeholder_qrels(queries_file, qrels_file, len(df))
 
