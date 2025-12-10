@@ -173,7 +173,6 @@ def main():
     args = parser.parse_args()
     
     config = {
-        'base_dir': '/Users/swaggy/Desktop/sentiment-analysis-food',
         'raw_data': 'data/recipes_data.csv',
         'processed_data': 'data/recipes_processed.csv',
         'corpus_dir': 'data/recipes/corpus',
