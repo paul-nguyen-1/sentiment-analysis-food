@@ -1,7 +1,7 @@
 import json
 from pyserini.search.lucene import LuceneSearcher
 
-searcher = LuceneSearcher("/Users/swaggy/Desktop/sentiment-analysis-food/indices/recipes_lucene")
+searcher = LuceneSearcher("indices/recipes_lucene")
 searcher.set_bm25(k1=0.9, b=0.4)
 
 queries = open("data/recipes/recipes-queries.txt").read().strip().split('\n')

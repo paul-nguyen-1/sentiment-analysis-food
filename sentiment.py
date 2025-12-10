@@ -183,8 +183,8 @@ class SentimentAnalyzer:
         self.df[keep_cols].to_csv(output_path, index=False)
 
 def main():
-    INPUT = "/Users/swaggy/Desktop/sentiment-analysis-food/data/recipes_processed.csv"
-    OUTPUT = "/Users/swaggy/Desktop/sentiment-analysis-food/data/recipes_sentiment.csv"
+    INPUT = "data/recipes_processed.csv"
+    OUTPUT = "data/recipes_sentiment.csv"
     
     analyzer = SentimentAnalyzer(INPUT)
     analyzer.load_data()

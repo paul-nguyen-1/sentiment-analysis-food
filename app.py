@@ -4,8 +4,8 @@ import os
 from pyserini.search.lucene import LuceneSearcher
 import json
 
-DATA_DIR = "/Users/swaggy/Desktop/sentiment-analysis-food/data"
-INDEX_DIR = "/Users/swaggy/Desktop/sentiment-analysis-food/indices/recipes_lucene"
+DATA_DIR = "data"
+INDEX_DIR = "indices/recipes_lucene"
 
 st.set_page_config(page_title="Recipe Search", layout="wide")
 

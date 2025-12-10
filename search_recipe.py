@@ -171,9 +171,9 @@ def compare_retrieval_algorithms(index_dir, queries, qrels, top_k=10, query_id_s
     }
 
 def main():
-    BASE_DIR = "/Users/swaggy/Desktop/sentiment-analysis-food/data/recipes"
+    BASE_DIR = "data/recipes"
     CORPUS_DIR = os.path.join(BASE_DIR, "corpus")
-    INDEX_DIR = "/Users/swaggy/Desktop/sentiment-analysis-food/indices/recipes_lucene"
+    INDEX_DIR = "indices/recipes_lucene"
     QUERIES_FILE = os.path.join(BASE_DIR, "recipes-queries.txt")
     QRELS_FILE = os.path.join(BASE_DIR, "recipes-qrels.txt")
     

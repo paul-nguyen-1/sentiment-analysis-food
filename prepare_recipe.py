@@ -72,8 +72,8 @@ def create_placeholder_qrels(queries_file, output_file, num_docs):
             f.write(f"{qid + 1} {qid} 1\n")
 
 def main():
-    RECIPES_CSV = "/Users/swaggy/Desktop/sentiment-analysis-food/data/recipes_processed.csv"
-    OUTPUT_DIR = "/Users/swaggy/Desktop/sentiment-analysis-food/data/recipes"
+    RECIPES_CSV = "data/recipes_processed.csv"
+    OUTPUT_DIR = "data/recipes"
     
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     

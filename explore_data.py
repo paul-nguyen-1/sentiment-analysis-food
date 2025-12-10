@@ -147,7 +147,7 @@ class RecipeExplorer:
         print("Completed")
 
 def main():
-    DATA_PATH = "/Users/swaggy/Desktop/sentiment-analysis-food/data/recipes_data.csv"
+    DATA_PATH = "data/recipes_data.csv"
     
     if not os.path.exists(DATA_PATH):
         print("Data file not found")

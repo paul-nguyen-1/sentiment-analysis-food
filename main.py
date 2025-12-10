@@ -174,12 +174,12 @@ def main():
     
     config = {
         'base_dir': '/Users/swaggy/Desktop/sentiment-analysis-food',
-        'raw_data': '/Users/swaggy/Desktop/sentiment-analysis-food/data/recipes_data.csv',
-        'processed_data': '/Users/swaggy/Desktop/sentiment-analysis-food/data/recipes_processed.csv',
-        'corpus_dir': '/Users/swaggy/Desktop/sentiment-analysis-food/data/recipes/corpus',
-        'queries_file': '/Users/swaggy/Desktop/sentiment-analysis-food/data/recipes/recipes-queries.txt',
-        'qrels_file': '/Users/swaggy/Desktop/sentiment-analysis-food/data/recipes/recipes-qrels.txt',
-        'index_dir': '/Users/swaggy/Desktop/sentiment-analysis-food/indices/recipes_lucene',
+        'raw_data': 'data/recipes_data.csv',
+        'processed_data': 'data/recipes_processed.csv',
+        'corpus_dir': 'data/recipes/corpus',
+        'queries_file': 'data/recipes/recipes-queries.txt',
+        'qrels_file': 'data/recipes/recipes-qrels.txt',
+        'index_dir': 'indices/recipes_lucene',
     }
     
     pipeline = RecipeRetrievalPipeline(config)

@@ -128,8 +128,8 @@ class RecipePreprocessor:
 
 
 def main():
-    INPUT_FILE = "/Users/swaggy/Desktop/sentiment-analysis-food/data/recipes_data.csv"
-    OUTPUT_FILE = "/Users/swaggy/Desktop/sentiment-analysis-food/data/recipes_processed.csv"
+    INPUT_FILE = "data/recipes_data.csv"
+    OUTPUT_FILE = "data/recipes_processed.csv"
     SAMPLE_SIZE = 10000
     
     print("Data Preprocessing:")
