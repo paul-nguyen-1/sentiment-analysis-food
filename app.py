@@ -28,7 +28,7 @@ searcher = load_searcher()
 st.title("Recipe Search & Sentiment Analysis")
 st.markdown("---")
 
-search_tab, sentiment_tab, about_tab = st.tabs(["Search", "Sentiment"])
+search_tab, sentiment_tab = st.tabs(["Search", "Sentiment"])
 with search_tab:
     st.header("Search Recipes")
     

@@ -1,0 +1,19 @@
+{
+  "algorithm_comparison": {
+    "tfidf": {
+      "name": "TF-IDF",
+      "precision@k": 0.3099999999999999,
+      "recall@k": 0.4780291005291006,
+      "MAP": 0.6274971305394585
+    },
+    "bm25": {
+      "name": "BM25",
+      "precision@k": 0.56,
+      "recall@k": 0.8578968253968254,
+      "MAP": 0.8147835779373478
+    }
+  },
+  "num_queries": 30,
+  "num_qrels": 30,
+  "evaluation_metric": "k=10"
+}
